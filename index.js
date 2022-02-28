@@ -268,21 +268,54 @@ console.log(findGreatestIndex())
 /*
 14)
 Create a function to get the largest even number from an array of integers.
+*/
+console.log('---ex.14---')
+// unresolved
+let arrEx14 = [2, 3, 10, 5, 35, 97, 5, 7, 60, 3]
+function getLargestEven()
+{
+    let currentNum = 0
+    for (let i = 0; i < arrEx14.length; i++)
+    {
+        if (currentNum % 2 === 0)
+        {
+            if (currentNum < arrEx14[i])
+            {
+                currentNum = arrEx14[i]
+            }
+        }
+    }
+    return currentNum
+}
+console.log(getLargestEven())
 
+/*
 16)
-
 Create a function to check from two given integers, whether one is positive and another one is negative.
-
+*/
+function checkPosNeg(a, b)
+{
+    if (((a > 0) && (b < 0)) || ((b > 0) && (a < 0)))
+    {
+        return true
+    } else
+    {
+        return false
+    }
+}
+console.log(checkPosNeg(-1, 1))
+/*
 17)
-
 Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case.
+*/
 
+/*
 18)
-
 Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
+*/
 
+/*
 19)
-
 Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
 
 If the number has 3 as a factor, output 'Diego'.
@@ -296,6 +329,8 @@ this would be a simple "Stefano".
 this would be a "DiegoRiccardo".
 34 has four factors: 1, 2, 17, and 34.
 this would be "34".
+*/
+
 
 /*
 20)
