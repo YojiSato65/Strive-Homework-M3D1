@@ -40,9 +40,14 @@ console.log(checkNum(10, 40))
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
 console.log('---ex.3---')
-
+function removeChar()
+{
+    let str = 'string'
+    let newStr = str.slice(3)
+    console.log(newStr)
+}
+removeChar()
 /*
-
 4)
  Create a function to find the largest of three given integers.
 */
