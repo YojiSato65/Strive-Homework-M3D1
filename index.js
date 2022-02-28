@@ -249,10 +249,24 @@ console.log(findAngle(20))
 13)
 Create a function to find the index of the greatest element of a given array of integers
 */
+console.log('---ex.13---')
+let numArr = [1, 9, 6, 4, 5]
+function findGreatestIndex()
+{
+    let currnetElement = 0
+    for (let i = 0; i < numArr.length; i++)
+    {
+        if (currnetElement < numArr[i])
+        {
+            currnetElement = numArr[i]
+        }
+    }
+    return numArr.indexOf(currnetElement)
+}
+console.log(findGreatestIndex())
 
 /*
 14)
-
 Create a function to get the largest even number from an array of integers.
 
 16)
