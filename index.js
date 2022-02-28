@@ -118,6 +118,18 @@ createNewStr(3)
 7)
 Create a function to display the city name if the string begins with "Los" or "New" otherwise return blank.
 */
+console.log('---ex.7---')
+function displayCity(cityName)
+{
+    if ((cityName.startsWith('Los')) || (cityName.startsWith('New')))
+    {
+        return cityName
+    } else
+    {
+        return ''
+    }
+}
+console.log(displayCity('Los Angeles'))
 
 /*
 8)
