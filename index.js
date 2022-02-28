@@ -13,16 +13,33 @@ function sumNum(a, b)
         return a + b
     }
 }
+console.log('---ex.1---')
 console.log(sumNum(4, 4))
+console.log(sumNum(2, 4))
+
 /*
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
 */
-
+function checkNum(a, b)
+{
+    if ((a === 50 || b === 50) || (a + b === 50))
+    {
+        return true
+    } else
+    {
+        return false
+    }
+}
+console.log('---ex.2---')
+console.log(checkNum(1, 5))
+console.log(checkNum(10, 50))
+console.log(checkNum(10, 40))
 /*
 3)
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
+console.log('---ex.3---')
 
 /*
 
