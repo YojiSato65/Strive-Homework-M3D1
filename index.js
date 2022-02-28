@@ -184,9 +184,25 @@ console.log(testInt2())
 /*
 11)
 Create a function to find the longest string from a given array of strings.
+*/
+console.log('---ex.11---')
+let arrStrings = ['one', 'two', 'three', 'four']
+function findLongest()
+{
+    let currentStr = ''
+    for (let i = 0; i < arrStrings.length; i++)
+    {
+        if (currentStr.length < arrStrings[i].length)
+        {
+            currentStr = arrStrings[i]
+        }
+    }
+    return currentStr
+}
+console.log(findLongest())
 
+/*
 12)
-
 Create a function to find the types of a given angle.
 
 Types of angles:
@@ -194,11 +210,14 @@ Types of angles:
     Right angle: An 90 degree angle.
     btuse angle: An angle between 90 and 180 degrees.
     Straight angle: A 180 degree angle.
+    */
 
+/*
 13)
-
 Create a function to find the index of the greatest element of a given array of integers
+*/
 
+/*
 14)
 
 Create a function to get the largest even number from an array of integers.
