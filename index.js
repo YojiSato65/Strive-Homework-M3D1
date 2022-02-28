@@ -104,9 +104,17 @@ console.log(checkTwoNum(30, 100))
 Create a function to create a new string of specified copies (positive number) of a given string.
 */
 console.log('---ex.6---')
+function createNewStr(number)
+{
+    let str = 'striveschool'
+    for (let i = 0; i < number; i++)
+    {
+        console.log(str)
+    }
+}
+createNewStr(3)
 
 /*
-
 7)
 Create a function to display the city name if the string begins with "Los" or "New" otherwise return blank.
 */
