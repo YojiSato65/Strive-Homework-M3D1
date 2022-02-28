@@ -164,11 +164,25 @@ console.log(testInt())
 
 /*
 10)
-
 Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
+*/
+console.log('---ex.10---')
+let arrayEx = [1, 2]
+function testInt2()
+{
+    if ((arrayEx.includes(1)) || (arrayEx.includes(3)))
+    {
+        return false
+    } else
+    {
+        return true
+    }
+}
+console.log(testInt2())
 
+
+/*
 11)
-
 Create a function to find the longest string from a given array of strings.
 
 12)
@@ -195,7 +209,7 @@ Create a function to check from two given integers, whether one is positive and 
 
 17)
 
-Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
+Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case.
 
 18)
 
@@ -217,7 +231,7 @@ this would be a "DiegoRiccardo".
 34 has four factors: 1, 2, 17, and 34.
 this would be "34".
 
+/*
 20)
 Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
-
 */
