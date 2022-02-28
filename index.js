@@ -136,13 +136,23 @@ console.log(displayCity('Los Angeles'))
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
 */
 console.log('---ex.8---')
-let arr = [1, 2, 3]
+let arr = [5, 3, 7, 4, 6, 7]
 function calcSum()
 {
-    const sumWithInitial = arr.reduce((previousValue, currentValue) => previousValue + currentValue)
+    const sumWithInitial = arr.reduce((previousValue, currentValue) =>
+    {
+        return previousValue + currentValue
+    }, 0)
     return sumWithInitial
 }
 console.log(calcSum())
+
+// let initial=0
+// for (let i = 0; i < arr.length; i++)
+// {
+//     initial += arr[i]
+// }
+
 
 /*
 9)
@@ -167,18 +177,19 @@ console.log(testInt())
 Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
 */
 console.log('---ex.10---')
-let arrayEx = [1, 2]
-function testInt2()
-{
-    if ((arrayEx.includes(1)) || (arrayEx.includes(3)))
-    {
-        return false
-    } else
-    {
-        return true
-    }
-}
-console.log(testInt2())
+console.log(!testInt())
+// let arrayEx = [1, 2]
+// function testInt2()
+// {
+//     if ((arrayEx.includes(1)) || (arrayEx.includes(3)))
+//     {
+//         return false
+//     } else
+//     {
+//         return true
+//     }
+// }
+// console.log(testInt2())
 
 
 /*
@@ -206,11 +217,33 @@ console.log(findLongest())
 Create a function to find the types of a given angle.
 
 Types of angles:
-    Acute angle: An angle between 0 and 90 degrees.
-    Right angle: An 90 degree angle.
-    btuse angle: An angle between 90 and 180 degrees.
-    Straight angle: A 180 degree angle.
-    */
+Acute angle: An angle between 0 and 90 degrees.
+Right angle: An 90 degree angle.
+btuse angle: An angle between 90 and 180 degrees.
+Straight angle: A 180 degree angle.
+*/
+console.log('---ex.12---')
+function findAngle()
+{
+    let angle = 0
+    if (angle >= 0 && angle < 90)
+    {
+        return 'Acute angle'
+    } else if (angle === 90)
+    {
+        return 'Right angle'
+    } else if (angle > 90 && angle < 180)
+    {
+        return 'Btuse angle'
+    } else if (angle === 180)
+    {
+        return 'Straight angle'
+    } else
+    {
+        return false
+    }
+}
+console.log(findAngle(20))
 
 /*
 13)
