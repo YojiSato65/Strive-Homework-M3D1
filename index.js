@@ -54,15 +54,15 @@ Create a function to find the largest of three given integers.
 console.log('---ex.4---')
 function largestNum(a, b, c)
 {
-    if (a > b > c || a > c > b) 
+    if ((a > b) && (a > c)) 
     {
         console.log('The largest is ', a)
     }
-    else if (b > a > c || b > c > a)
+    else if ((b > a) && (b > c))
     {
         console.log('The largest is ', b)
     }
-    else if (c > a > b || c > b > a)
+    else if ((c > a) && (c > b))
     {
         console.log('The largest is ', c)
     }
@@ -77,6 +77,7 @@ largestNum(8, 9, 7)
 largestNum(10, 12, 11)
 largestNum(13, 14, 15)
 largestNum(17, 16, 18)
+largestNum(17, 18, 18)
 /*
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
