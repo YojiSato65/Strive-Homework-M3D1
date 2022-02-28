@@ -135,6 +135,14 @@ console.log(displayCity('Los Angeles'))
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
 */
+console.log('---ex.8---')
+let arr = [1, 2, 3]
+function calcSum()
+{
+    const sumWithInitial = arr.reduce((previousValue, currentValue) => previousValue + currentValue)
+    return sumWithInitial
+}
+console.log(calcSum())
 
 /*
 
