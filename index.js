@@ -145,13 +145,24 @@ function calcSum()
 console.log(calcSum())
 
 /*
-
 9)
 Create a function to test whether an array of integers of length 2 contains 1 or a 3. 
 */
+console.log('---ex.9---')
+let array = [1, 2]
+function testInt()
+{
+    if ((array.includes(1)) || (array.includes(3)))
+    {
+        return true
+    } else
+    {
+        return false
+    }
+}
+console.log(testInt())
 
 /*
-
 10)
 
 Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
