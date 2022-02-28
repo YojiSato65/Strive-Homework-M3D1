@@ -49,19 +49,60 @@ function removeChar()
 removeChar()
 /*
 4)
- Create a function to find the largest of three given integers.
+Create a function to find the largest of three given integers.
 */
-
+console.log('---ex.4---')
+function largestNum(a, b, c)
+{
+    if (a > b > c || a > c > b) 
+    {
+        console.log('The largest is ', a)
+    }
+    else if (b > a > c || b > c > a)
+    {
+        console.log('The largest is ', b)
+    }
+    else if (c > a > b || c > b > a)
+    {
+        console.log('The largest is ', c)
+    }
+    else
+    {
+        console.log('i do not know')
+    }
+}
+largestNum(3, 2, 1)
+largestNum(6, 4, 5)
+largestNum(8, 9, 7)
+largestNum(10, 12, 11)
+largestNum(13, 14, 15)
+largestNum(17, 16, 18)
 /*
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 */
-
+console.log('---ex.5---')
+function checkTwoNum(a, b)
+{
+    if ((a >= 40 && a <= 60) || (a >= 70 && a <= 100))
+    {
+        return true
+    }
+    else if ((b >= 40 && b <= 60) || (b >= 70 && b <= 100))
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+console.log(checkTwoNum(30, 100))
 /*
 6) 
-
 Create a function to create a new string of specified copies (positive number) of a given string.
 */
+console.log('---ex.6---')
 
 /*
 
