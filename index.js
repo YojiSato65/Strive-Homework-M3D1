@@ -293,6 +293,7 @@ console.log(getLargestEven())
 16)
 Create a function to check from two given integers, whether one is positive and another one is negative.
 */
+console.log('---ex.16---')
 function checkPosNeg(a, b)
 {
     if (((a > 0) && (b < 0)) || ((b > 0) && (a < 0)))
@@ -304,15 +305,44 @@ function checkPosNeg(a, b)
     }
 }
 console.log(checkPosNeg(-1, 1))
+
 /*
 17)
 Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case.
 */
-
+// unsolved
+console.log('---ex.17---')
+function createLowUp(str)
+{
+    let strting = ''
+    if (strting.lengrh > 3)
+    {
+        let front = strting.slice(0, 2).toLowerCase()
+        let back = strting.slice(3).toUpperCase()
+        strting = front + back
+    } else
+    {
+        strting = strting.toUpperCase()
+    }
+    return strting
+}
+console.log(createLowUp('hahaha'))
 /*
 18)
 Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
 */
+console.log('---ex.18---')
+function calSum(a, b)
+{
+    if (((a + b) > 50) && ((a + b) < 80))
+    {
+        return 65
+    } else
+    {
+        return 80
+    }
+}
+console.log(calSum(20, 40))
 
 /*
 19)
