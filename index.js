@@ -310,23 +310,20 @@ console.log(checkPosNeg(-1, 1))
 17)
 Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case.
 */
-// unsolved
 console.log('---ex.17---')
 function createLowUp(str)
 {
-    let strting = ''
-    if (strting.lengrh > 3)
+    if (str.length < 3)
     {
-        let front = strting.slice(0, 2).toLowerCase()
-        let back = strting.slice(3).toUpperCase()
-        strting = front + back
+        return str.toUpperCase()
     } else
     {
-        strting = strting.toUpperCase()
+        return str.slice(0, 3).toLowerCase() + str.slice(3).toUpperCase()
     }
-    return strting
+
 }
-console.log(createLowUp('hahaha'))
+console.log(createLowUp('something'))
+
 /*
 18)
 Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
